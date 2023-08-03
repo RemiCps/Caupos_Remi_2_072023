@@ -229,11 +229,12 @@ p i {
 }
 
 .afficher-plus {
+    display: flex;
     color: black;
     text-decoration: none;
     padding-top: 20px;
     font-weight: 700;
-    width: 100%;
+    width: 40%;
 }
 /****** Populaires ***********/
 .populaires {
@@ -294,6 +295,7 @@ p i {
 }
 
 .activites a {
+    display: contents;
     color: black;
     text-decoration: none;
 }
@@ -478,6 +480,7 @@ footer {
     }
 
     header nav a:hover {
+        padding-top: 0;
         color: var(--main-color);
         border-bottom: 2px solid var(--main-color);
         border-top: 0px;
@@ -564,6 +567,7 @@ footer {
     }
 
     .hebergements-and-populaires section {
+        padding: 20px;
         margin-top: 0;
         border-radius: 0;
         background-color: none;
@@ -587,14 +591,47 @@ footer {
     .hebergements {
         background-color: white;
     }
+
+    .hebergements .section-title {
+        padding-top: 20px;
+    }
+
     .hebergements-cards {
         flex-direction: column;
     }
+
     .hebergements-cards .card {
         width: 100%;
         box-shadow: 0px 5px 9px 3px #C5C5C5;
     }
 
+    .hebergements-cards .card:nth-child(1) {
+        order: 1;
+    }
+
+    .hebergements-cards .card:nth-child(2) {
+        order: 6;
+    }
+
+    .hebergements-cards .card:nth-child(3) {
+        order: 3;
+    }
+
+    .hebergements-cards .card:nth-child(4) {
+        order: 4;
+    }
+
+    .hebergements-cards .card:nth-child(5) {
+        order: 2;
+    }
+
+    .hebergements-cards .card:nth-child(6) {
+        order: 5;
+    }
+
+    .afficher-plus {
+        padding-top: 30px;
+    }
     /***** Activites ******/
 
     .activites {
