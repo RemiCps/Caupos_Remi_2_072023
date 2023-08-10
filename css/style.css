@@ -67,7 +67,7 @@ header nav a {
 header nav a:hover {
     color: var(--main-color);
     border-top: 2px solid var(--main-color);
-    padding-top: 3%;
+    padding-top: 8.5px;
 }
 
 .lien {
@@ -78,8 +78,9 @@ header nav a:hover {
 .headtitle {
     display: flex;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 20px;
     padding-bottom: 30px;
+    margin-top: 30px;
 }
 
 h1 {
@@ -87,11 +88,18 @@ h1 {
     margin: 0;
 }
 
-header p {
+.headtitle p {
     margin: 0;
-    font-size: 16px;
 }
 
+nav ul{
+    display: flex;
+    margin: 0;
+}
+
+nav li {
+    list-style-type: none;
+}
 /*** La recherche et les filtres *******/
 #carte {
     border: 1px solid black;
@@ -104,7 +112,7 @@ header p {
 
 .destination {
     border-style: none;
-    margin-left: 30px;
+    padding-left: 20px;
     font-weight: 800;
     font-size: 20px;
 }
@@ -170,7 +178,7 @@ form {
     margin-right: 10px;
 }
 
-.bulle-info i {
+p i {
     border: 1px solid grey;
     border-radius: 90px;
     padding: 7px 6px 7px 6px;
@@ -485,9 +493,20 @@ footer {
 
     header nav {
         display: flex;
-        justify-content: flex-start;
+        justify-content: center;
         padding-top: 20px;
     }
+
+    nav ul {
+        padding: 0;
+        width: 100%;
+    }
+
+    nav li {
+        display: flex;
+        width: 100%;
+    }
+    
     header nav a {
         margin: 0;
         border-bottom: 2px solid #F2F2F2;
@@ -667,6 +686,7 @@ footer {
     .activites-cards {
         flex-direction: column;
         height: 100%;
+        width: auto;
     }
 
     .activites-cards article {
